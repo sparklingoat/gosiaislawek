@@ -2,64 +2,125 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gosia & Sławek</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap&subset=latin-ext" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d8a6e2c9.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #fffaf8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #fddde6;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #c94f7c;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #f9f9f9;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section h2 {
+      color: #c94f7c;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 1rem;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .info i {
+      margin-right: 1rem;
+      color: #c94f7c;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Gosia & Sławek</h1>
-    <p>Zapraszamy na nasz wielki dzień!</p>
+    <p>Bierzemy ślub! Nie możemy się doczekać, żeby razem z Wami świętować miłość, tort i taneczne wygibasy 💃🕺</p>
   </header>
 
   <nav>
     <a href="#usc">USC</a>
     <a href="#dom">Uroczystość</a>
     <a href="#harmonogram">Harmonogram</a>
-    <a href="#dresscode">Dress Code</a>
     <a href="#kontakt">Kontakt</a>
+    <a href="#dresscode">Dress Code</a>
+    <a href="#praktyczne">Informacje praktyczne</a>
   </nav>
 
-  <main>
-    <section id="usc">
-      <h2>Uroczystość w USC</h2>
-      <p>Dworcowa 3, 62-050 Mosina</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.319782204724!2d16.845432676947537!3d52.24201915827407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705b4d60f6361a7%3A0x83e6ab9168607e09!2sDworcowa%203%2C%2062-050%20Mosina!5e0!3m2!1spl!2spl!4v1715936587959!5m2!1spl!2spl" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+  <section id="usc">
+    <h2><i class="fas fa-landmark"></i> Urząd Stanu Cywilnego</h2>
+    <p>Dworcowa 3, 62-050 Mosina</p>
+    <iframe src="https://www.google.com/maps?q=Dworcowa+3,+Mosina&output=embed"></iframe>
+  </section>
 
-    <section id="dom">
-      <h2>Uroczystość w naszym domu</h2>
-      <p>Zgodna 24, 62-061 Łódź (gmina Stęszew, powiat poznański)</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.9634359415246!2d16.707170676952276!3d52.32047935747494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705b0a11c45e4fd%3A0xcaa01f43e4a1c05!2sZgodna%2024%2C%2062-061%20%C5%81%C3%B3d%C5%BA%2C%20Polska!5e0!3m2!1spl!2spl!4v1715936815763!5m2!1spl!2spl" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+  <section id="dom">
+    <h2><i class="fas fa-home"></i> Uroczystość</h2>
+    <p>Zgodna 24, 62-061 Łódź, gmina Stęszew</p>
+    <iframe src="https://www.google.com/maps?q=Zgodna+24,+Stęszew&output=embed"></iframe>
+  </section>
 
-    <section id="harmonogram">
-      <h2>Harmonogram dnia</h2>
-      <p>Pełen plan wydarzeń pojawi się wkrótce – zarezerwujcie sobie cały dzień 💒</p>
-    </section>
+  <section id="harmonogram">
+    <h2><i class="fas fa-clock"></i> Harmonogram</h2>
+    <p>Wkrótce podamy szczegóły – zaglądaj tu ponownie!</p>
+  </section>
 
-    <section id="dresscode">
-      <h2>Dress Code & praktyczne informacje</h2>
-      <ul>
-        <li>🌿 Styl: **luźny i wygodny** – przyjęcie odbywa się w ogrodzie, więc szpilki i smokingi można zostawić w szafie 😉</li>
-        <li>🅿️ Parking: dostępny przy ulicy i na posesji</li>
-        <li>🚻 Toaleta: oczywiście, dostępna na miejscu</li>
-        <li>☔ W razie deszczu – mamy plan B pod dachem!</li>
-      </ul>
-    </section>
+  <section id="kontakt">
+    <h2><i class="fas fa-phone"></i> Kontakt</h2>
+    <p>Gosia: +48 123 456 789</p>
+    <p>Sławek: +48 987 654 321</p>
+  </section>
 
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p>Masz pytania? Zadzwoń:</p>
-      <ul>
-        <li>📱 Gosia: 730 285 759</li>
-        <li>📱 Sławek: 660 403 343</li>
-      </ul>
-    </section>
-  </main>
+  <section id="dresscode">
+    <h2><i class="fas fa-tshirt"></i> Dress Code</h2>
+    <p>Luźny i wygodny – najważniejsze, żebyście czuli się dobrze!</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Gosia & Sławek — do zobaczenia na ślubie! 💕</p>
-  </footer>
+  <section id="praktyczne">
+    <h2><i class="fas fa-info-circle"></i> Informacje praktyczne</h2>
+    <ul>
+      <li>Parking dostępny przy obu lokalizacjach</li>
+      <li>Na miejscu zapewniamy napoje, jedzenie i dużo miłości 💖</li>
+      <li>W razie pytań – dzwońcie śmiało!</li>
+    </ul>
+  </section>
 </body>
 </html>
