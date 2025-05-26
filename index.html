@@ -1,161 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gosia & Sławek</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap&subset=latin-ext" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Raleway', sans-serif;
-      background-color: #f7f5f2;
-      background-image: radial-gradient(#e6e0d6 1px, transparent 1px);
-      background-size: 20px 20px;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #8757c7, #2c9b83);
-      color: #fff;
-      padding: 3rem 2rem;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-    header p {
-      font-size: 1.3rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background-color: #fff;
-      border-bottom: 1px solid #dfe6e9;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    nav a {
-      padding: 1rem;
-      text-decoration: none;
-      color: #7d5fff;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background-color: #f3f0f8;
-    }
-    section {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 800px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    section h2 {
-      color: #7d5fff;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 1.6rem;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 1rem;
-      border-radius: 8px;
-    }
-    ul {
-      list-style: disc;
-      margin-top: 1rem;
-      padding-left: 1.5rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Gosia ❤ Sławek</h1>
-    <h2>28 czerwca 2025</h2>
-    <p>Pobieramy się!</p>
-  </header>
-  <nav>
-    <a href="#intro">Wstęp</a>
-    <a href="#usc">USC</a>
-    <a href="#dom">Uroczystość</a>
-    <a href="#harmonogram">Harmonogram</a>
-    <a href="#dresscode">Dress Code</a>
-    <a href="#praktyczne">Informacje praktyczne</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#poprawiny">Poprawiny</a>
-    <a href="#hotel">Hotel</a>
-  </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gosia & Sławek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .jumbotron {
+        background: linear-gradient(135deg, #8757c7, #2c9b83);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+      }
+      .section-card {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
+      footer {
+        margin-top: 4rem;
+        padding: 2rem 0;
+        text-align: center;
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
 
-  <section id="intro">
-    <h2>❤️ Witajcie!</h2>
-    <p>To dla nas wyjątkowy moment i jesteśmy szczęśliwi, że chcecie być jego częścią. Poniżej znajdziecie wszystkie niezbędne informacje, by razem z nami przeżyć ten dzień z uśmiechem!</p>
-  </section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">G&S</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#intro">Wstęp</a></li>
+            <li class="nav-item"><a class="nav-link" href="#usc">USC</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dom">Uroczystość</a></li>
+            <li class="nav-item"><a class="nav-link" href="#harmonogram">Harmonogram</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dresscode">Dress Code</a></li>
+            <li class="nav-item"><a class="nav-link" href="#praktyczne">Informacje</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link" href="#poprawiny">Poprawiny</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hotel">Hotel</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <section id="usc">
-    <h2>🏛️ Urząd Stanu Cywilnego</h2>
-    <p>Dworcowa 3, 62-050 Mosina</p></br>
-<p><i data-lucide="circle-alert"></i></p>
-<p>Uwaga! Po wpisaniu z ręki w Mapy Google 'USC Mosina' nawigacja ustawia pinezkę na inny budynek USC w Mosinie przy Rynku, w którym nie ma Sali Ślubów, nie jedźcie tam! Wpisywanie 'Dworcowa 3' też wyświetla źle. Zamiast tego, wpisujcie 'Sala Ślubów' (osobiście dodawałam tę pinezkę ;D), która jest minutę od stacji kolejowej. Na przeciwko jest parking, drugi większy jest też dworcu. Wygodnie też przyjechać pociągiem z Poznania.</p> 
-    <iframe src="https://www.google.com/maps?q=Dworcowa+3,+Mosina&output=embed"></iframe>
-  </section>
+    <!-- Hero section -->
+    <div class="jumbotron">
+      <h1 class="display-4">Gosia ❤ Sławek</h1>
+      <p class="lead">28 czerwca 2025</p>
+      <p>Pobieramy się!</p>
+    </div>
 
-  <section id="dom">
-    <h2>🏠 Uroczystość</h2>
-    <p>Zgodna 24, 62-061 Łódź, gmina Stęszew</p>
-    <iframe src="https://www.google.com/maps?q=Zgodna+24,+Stęszew&output=embed"></iframe>
-  </section>
+    <div class="container">
 
-    <section id="harmonogram">
-    <h2>🕒 Harmonogram</h2>
-    <p>14:00 Ceremonia w Urzędzie</p>
-    <p>14:45 Obiad dla rodziny w Pałacu Będlewo. Goście w tym czasie mogą udać się już do nas (będzie czekał ciepły posiłek i zimne napoje %), przejść się nad jezioro albo zameldować się w hotelu!</p>
-    <p>17:00 Oficjalny start!</p>
-  </section>
+      <div id="intro" class="section-card mb-4">
+        <h2>❤️ Witajcie!</h2>
+        <p>To dla nas wyjątkowy moment i jesteśmy szczęśliwi, że chcecie być jego częścią. Poniżej znajdziecie wszystkie niezbędne informacje, by razem z nami przeżyć ten dzień z uśmiechem!</p>
+      </div>
 
-    <section id="dresscode">
-    <h2>🪭 Dress Code</h2>
-    <p>Luźny i wygodny – najważniejsze, żebyście czuli się dobrze!</p>
-  </section>
+      <div id="usc" class="section-card mb-4">
+        <h2>🏛️ Urząd Stanu Cywilnego</h2>
+        <p>Dworcowa 3, 62-050 Mosina</p>
+        <div class="alert alert-warning mt-3">
+          <strong>Uwaga!</strong> Po wpisaniu z ręki w Mapy Google 'USC Mosina' nawigacja ustawia pinezkę na inny budynek USC w Mosinie przy Rynku, w którym nie ma Sali Ślubów, nie jedźcie tam! Wpisywanie 'Dworcowa 3' też wyświetla źle. Zamiast tego, wpisujcie 'Sala Ślubów' (osobiście dodawałam tę pinezkę ;D), która jest minutę od stacji kolejowej. Na przeciwko jest parking, drugi większy jest też dworcu. Wygodnie też przyjechać pociągiem z Poznania.
+        </div>
+        <iframe class="mt-3 rounded" src="https://www.google.com/maps?q=Dworcowa+3,+Mosina&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
 
-    <section id="praktyczne">
-    <h2>ℹ️ Informacje praktyczne</h2>
-     <p>Nasz pies lubi uciekać, dajcie znać jak go zobaczycie za płotem i pamiętajcie aby zamykać bramę za sobą! 🐾</p>
-    </ul>
-  </section>
+      <div id="dom" class="section-card mb-4">
+        <h2>🏠 Uroczystość</h2>
+        <p>Zgodna 24, 62-061 Łódź, gmina Stęszew</p>
+        <iframe class="mt-3 rounded" src="https://www.google.com/maps?q=Zgodna+24,+Stęszew&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
 
-     <section id="kontakt">
-    <h2>📱 Kontakt</h2>
-    <p>Gosia: 730 285 759</p>
-    <p>Sławek: 660 403 343</p>
-  </section>
+      <div id="harmonogram" class="section-card mb-4">
+        <h2>🕒 Harmonogram</h2>
+        <ul>
+          <li>14:00 Ceremonia w Urzędzie</li>
+          <li>14:45 Obiad dla rodziny w Pałacu Będlewo</li>
+          <li>17:00 Oficjalny start!</li>
+        </ul>
+      </div>
 
-    <section id="poprawiny">
-    <h2>🎉 Poprawiny</h2>
-    <p>Następnego dnia apraszamy na poprawiny od godziny 11:00 – będzie grill!</p>
-  </section>
+      <div id="dresscode" class="section-card mb-4">
+        <h2>🪭 Dress Code</h2>
+        <p>Luźny i wygodny – najważniejsze, żebyście czuli się dobrze!</p>
+      </div>
 
-    <section id="hotel">
-    <h2>🛏️ Hotel</h2>
-    <p>Dla gości spoza Poznania przewidziany jest hotel, oddalony o 15 minut spacerem od naszego domu.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.756419753768!2d16.75939588992188!3d52.24027500715711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47044d0ca63c2a19%3A0xfe8d05ff6eb83293!2sSzablewski.%20Hotel!5e0!3m2!1spl!2spl!4v1748257226491!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-  
+      <div id="praktyczne" class="section-card mb-4">
+        <h2>ℹ️ Informacje praktyczne</h2>
+        <p>Nasz pies lubi uciekać 🐾 – dajcie znać jak go zobaczycie za płotem i pamiętajcie o zamykaniu bramy!</p>
+      </div>
 
-  <footer>
-    © 2025 Gosia & Sławek. Stworzone z miłością.
-  </footer>
-</body>
+      <div id="kontakt" class="section-card mb-4">
+        <h2>📱 Kontakt</h2>
+        <p>Gosia: 730 285 759</p>
+        <p>Sławek: 660403343</p>
+      </div>
+
+      <div id="poprawiny" class="section-card mb-4">
+        <h2>🎉 Poprawiny</h2>
+        <p>Następnego dnia zapraszamy na poprawiny od godziny 11:00 – będzie grill!</p>
+      </div>
+
+      <div id="hotel" class="section-card mb-4">
+        <h2>🛏️ Hotel</h2>
+        <p>Dla gości spoza Poznania przewidziany jest hotel, oddalony o 15 minut spacerem od naszego domu.</p>
+        <iframe class="mt-3 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.756419753768!2d16.75939588992188!3d52.24027500715711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47044d0ca63c2a19%3A0xfe8d05ff6eb83293!2sSzablewski.%20Hotel!5e0!3m2!1spl!2spl!4v1748257226491!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2025 Gosia & Sławek. Stworzone z miłością 💕
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
